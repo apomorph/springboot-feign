@@ -3,6 +3,7 @@ feign进一步封装
 
 添加maven依赖
 
+```
   <dependency>
       <groupId>io.github.openfeign</groupId>
       <artifactId>feign-okhttp</artifactId>
@@ -13,3 +14,4 @@ feign进一步封装
       <artifactId>feign-jackson</artifactId>
       <version>10.1.0</version>
   </dependency>
+```
