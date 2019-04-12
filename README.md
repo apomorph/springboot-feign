@@ -16,4 +16,4 @@ feign进一步封装
   </dependency>
 ```
 Problems:   
-     feign集成okhttp后不支持GET请求
+     1.feign集成okhttp后不支持GET请求
