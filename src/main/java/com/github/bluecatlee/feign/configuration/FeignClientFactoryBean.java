@@ -1,4 +1,4 @@
-package com.ymxc.hospital.common.feign;
+package com.github.bluecatlee.feign.configuration;
 
 import feign.*;
 import feign.codec.Decoder;

@@ -1,4 +1,4 @@
-package com.ymxc.hospital.common.feign;
+package com.github.bluecatlee.feign.configuration;
 
 import feign.Client;
 import feign.Feign;
@@ -15,9 +15,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-/*
- * feign自动配置类
- */
 @Configuration
 @ConditionalOnClass(Feign.class)
 public class FeignAutoConfiguration {

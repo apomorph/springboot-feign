@@ -1,5 +1,7 @@
-package com.ymxc.hospital.common.feign;
+package com.github.bluecatlee.feign.configuration;
 
+import com.github.bluecatlee.feign.annotation.EnableFeignClients;
+import com.github.bluecatlee.feign.annotation.FeignClient;
 import org.springframework.beans.factory.annotation.AnnotatedBeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
@@ -81,7 +83,8 @@ public class FeignClientRegistrar implements ImportBeanDefinitionRegistrar, Reso
                                      AnnotationMetadata annotationMetadata, Map<String, Object> attributes) {
 
         String className = annotationMetadata.getClassName();                             // feign客户端(带@FeignClient注解的接口)的class类名
-        String alias = annotationMetadata.getClass().getSimpleName() + "FeignClient";     // 类名 + FeignClient 作为bean的别名
+        // String alias = annotationMetadata.getClass().getSimpleName() + "FeignClient";     // 类名 + FeignClient 作为bean的别名
+        String alias = className + "FeignClient";  // fixed by bluecatlee (实测springboot2.1.x版本不允许bean alias重复)
 
         BeanDefinitionBuilder definition = BeanDefinitionBuilder                 // BeanDefinitionBuilder可以动态的创建bean定义
                 .genericBeanDefinition(FeignClientFactoryBean.class);            // 使用FactoryBean生成bean

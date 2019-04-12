@@ -1,12 +1,10 @@
-package com.ymxc.hospital.common.feign;
+package com.github.bluecatlee.feign.annotation;
 
+import com.github.bluecatlee.feign.configuration.FeignClientRegistrar;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
 
-/*
- * 使用在主启动类上
- */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

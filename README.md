@@ -15,3 +15,11 @@ feign进一步封装
       <version>10.1.0</version>
   </dependency>
 ```
+
+```
+Tips:
+  @RequestLine注解不能指定host为ip:port的方式 :会被编码
+  @Body注解的value值不能为null或空串
+  如果使用okhttp作为client实现 则GET方法不能使用@Body注解
+  @Param注解在bean上 无法通过模板获取到对应的bean属性值
+```
