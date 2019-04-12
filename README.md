@@ -15,3 +15,5 @@ feign进一步封装
       <version>10.1.0</version>
   </dependency>
 ```
+Problems:
+ feign集成okhttp后不支持GET请求
