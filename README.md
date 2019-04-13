@@ -1,4 +1,4 @@
-# springboot-feign
+# springboot-feign ![](https://www.travis-ci.org/bluecatlee/springboot-feign.svg?branch=master)
 feign进一步封装
 
 添加maven依赖
