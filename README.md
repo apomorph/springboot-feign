@@ -23,3 +23,5 @@ Tips:
   如果使用okhttp作为client实现 则GET方法不能使用@Body注解
   @Param注解在bean上 无法通过模板获取到对应的bean属性值
 ```
+                      
+提供了指定动态url的方案
