@@ -6,7 +6,7 @@ import feign.Param;
 import feign.RequestLine;
 import lombok.Data;
 
-@FeignClient("http://t.weather.sojson.com")
+@FeignClient("http://t.weather.itboy.net")
 public interface WeatherService {
 
     @Data
